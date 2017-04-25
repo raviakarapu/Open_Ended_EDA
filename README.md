@@ -61,13 +61,13 @@ Each rental listing has features that could be categorized as numerical, text an
 #### Just Rental Price
 It seems fair to say that houses with lower rental price might show higher interest level and vice versa. Box plots seemed to natural choice to explore this aspect of the dataset.
 
-![Rental price distribution for different interest level categories](price_boxplot.png)
+![Rental price distribution for different interest level categories](pictures/price_boxplot.png)
 
 Median rental prices of high interest level houses are lower than houses with medium interest level which are lower than low interest level category. However, the inter-quartile ranges of these three categories overlap significantly. This makes interest level prediction solely based on rental price ineffective approach.
 Above box plot does not show any outliers. There are about 2215 listings out of 49,352 listings which have rental prices more than 7000$. Of these 95% of listings showed lower interest level.
 #### Price and Location
 Features that have numerical data are number of bedrooms, number of bathrooms, price, latitude and longitude. Since number of bed and bathrooms take discrete values, it might be worth while to look at pair-plot with price, latitude and longitude as variables, shown below
-![Pair plot for rental listing dataset](pairplot_price_latitude_longitude.png)
+![Pair plot for rental listing dataset](pictures/pairplot_price_latitude_longitude.png)
 
 Plots suggest that space in price-latitude and price-longitude domain could be partitioned into regions that have very high probability for
   1. low interest
@@ -77,15 +77,15 @@ Plots suggest that space in price-latitude and price-longitude domain could be p
 #### Bedrooms and bathrooms    
 Cross correlation table was developed between bathrooms and interest level, shown below
 
-![bathroom interest level cross-correlation](bathroom_interest_level_correlation.png)
+![bathroom interest level cross-correlation](pictures/bathroom_interest_level_correlation.png)
 
 Listings with number of bathrooms other than one or two have more than 90% probability for low interest level. However, 80% of listings have one bathroom and 16% have 2 bathrooms.  Following two table shows the interest level of one and two bathroom rental listings by number of bedrooms.
 
 ##### one bathroom listings
-![bedroom interest level cross-correlation](bedrooms_interest_level_correlation_1bath.png)
+![bedroom interest level cross-correlation](pictures/bedrooms_interest_level_correlation_1bath.png)
 
 ##### two bathroom listings
-![bedroom interest level cross-correlation](bedrooms_interest_level_correlation_2bath.png)
+![bedroom interest level cross-correlation](pictures/bedrooms_interest_level_correlation_2bath.png)
 
  Listings with one bedroom and one bath tops number of rental listings. Category that shows highest fraction of high interest level listings have two bedrooms and one bathroom.
  Classification of data by combination number of bedrooms and number of bathrooms did show that interest level depends on number of bedrooms and bathrooms.
@@ -95,13 +95,13 @@ Subway is one of the preferred modes of transportation in NYC. It seems intuitiv
 
 Figure below plots distance to closest subway vs price
 
-![Price vs Distance to Closest Subway](Price vs Distance to closest Subway.png)
+![Price vs Distance to Closest Subway](pictures/Price vs Distance to closest Subway.png)
 There is no clear correlation between price and distance to nearest subway. However, scaled rental price (scaled price = price/(number of bathrooms)/(distance to subway)) shows exponential correlation with distance, see below.
 
-![Scaled Price vs Distance to Closest Subway](Scaled Price vs Distance to closest Subway.png)
+![Scaled Price vs Distance to Closest Subway](pictures/Scaled Price vs Distance to closest Subway.png)
 
 Log-log plot, shown below, indicates that scaled price could be bound between two lines in log-log space.
-![Scaled Price vs Distance to Closest Subway](Scaled Price vs Distance to closest Subway og-log plot.png)
+![Scaled Price vs Distance to Closest Subway](pictures/Scaled Price vs Distance to closest Subway og-log plot.png)
 
 ### Interest Level prediction
 Based on exploratory analysis, three algorithms for predicting interest level were developed. 60% of the dataset was used for training while rest of 40% data was used for prediction.
