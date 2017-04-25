@@ -95,13 +95,13 @@ Subway is one of the preferred modes of transportation in NYC. It seems intuitiv
 
 Figure below plots distance to closest subway vs price
 
-![Price vs Distance to Closest Subway](pictures/Price vs Distance to closest Subway.png)
+![Price vs Distance to Closest Subway](pictures/Price%20vs%20Distance%20to%20closest%20Subway.png)
 There is no clear correlation between price and distance to nearest subway. However, scaled rental price (scaled price = price/(number of bathrooms)/(distance to subway)) shows exponential correlation with distance, see below.
 
-![Scaled Price vs Distance to Closest Subway](pictures/Scaled Price vs Distance to closest Subway.png)
+![Scaled Price vs Distance to Closest Subway](pictures/Scaled%20Price%20vs%20Distance%20to%20closest%20Subway.png)
 
 Log-log plot, shown below, indicates that scaled price could be bound between two lines in log-log space.
-![Scaled Price vs Distance to Closest Subway](pictures/Scaled Price vs Distance to closest Subway og-log plot.png)
+![Scaled Price vs Distance to Closest Subway](pictures/Scaled%20Price%20vs%20Distance%20to%20closest%20Subway%20og-log%20plot.png)
 
 ### Interest Level prediction
 Based on exploratory analysis, three algorithms for predicting interest level were developed. 60% of the dataset was used for training while rest of 40% data was used for prediction.
